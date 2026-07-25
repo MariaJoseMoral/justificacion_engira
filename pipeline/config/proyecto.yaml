@@ -1,0 +1,153 @@
+proyecto:
+  id: "engira_2025_2026"
+  nombre: "enGira!"
+  descripcion: "Plataforma digital para la movilidad, distribución y acompañamiento de profesionales de las artes escénicas."
+  responsable: "María José Moral Morgado"
+  entidad: "María José Moral Morgado"
+  expediente: "19770-02535886"
+
+subvencion:
+  organismo: "Ministerio de Cultura"
+  convocatoria: "Ayudas para la acción y la promoción cultural"
+  importe_concedido: 25000.00
+  presupuesto_total: 34180.00
+  moneda: "EUR"
+
+fechas:
+  inicio_ejecucion: "2025-07-01"
+  fin_ejecucion: "2026-06-30"
+  fecha_limite_facturas: "2026-06-30"
+  fecha_limite_pagos: "2026-09-30"
+
+repositorio:
+  raiz: "../.."
+
+rutas_entrada:
+  bases_y_resolucion: "00_BASES_Y_RESOLUCION"
+  proyecto_presentado: "01_PROYECTO_PRESENTADO"
+  actividades: "02_ACTIVIDADES_REALIZADAS"
+  resultados_indicadores: "03_RESULTADOS_E_INDICADORES"
+  comunicacion: "04_COMUNICACION_Y_DIFUSION"
+  participantes: "05_PARTICIPANTES_Y_COLABORADORES"
+  desarrollo_plataforma: "06_DESARROLLO_PLATAFORMA"
+  evidencias: "07_EVIDENCIAS"
+  justificacion_economica: "08_JUSTIFICACION_ECONOMICA"
+  desviaciones: "09_DESVIACIONES_Y_CAMBIOS"
+  memoria_final: "10_MEMORIA_FINAL"
+
+rutas_salida:
+  outputs: "pipeline/outputs"
+  logs: "pipeline/logs"
+  inventario: "pipeline/outputs/inventario_documental.csv"
+  informe: "pipeline/outputs/informe_inventario.md"
+
+opciones:
+  incluir_archivos_ocultos: false
+  calcular_hash: true
+  detectar_duplicados: true
+  extraer_texto: false
+  sobrescribir_salidas: true
+
+tipos_archivos:
+
+  pdf:
+    extensiones:
+      - ".pdf"
+    categoria: documento
+    extractor: pymupdf
+    editable: false
+    permite_texto: true
+
+  word:
+    extensiones:
+      - ".doc"
+      - ".docx"
+    categoria: documento
+    extractor: python-docx
+    editable: true
+    permite_texto: true
+
+  pages:
+    extensiones:
+      - ".pages"
+    categoria: documento
+    extractor: manual
+    editable: true
+    permite_texto: false
+
+  excel:
+    extensiones:
+      - ".xls"
+      - ".xlsx"
+      - ".xlsm"
+      - ".csv"
+      - ".ods"
+    categoria: hoja_calculo
+    extractor: pandas
+    editable: true
+    permite_texto: true
+
+  imagen:
+    extensiones:
+      - ".jpg"
+      - ".jpeg"
+      - ".png"
+      - ".gif"
+      - ".webp"
+    categoria: imagen
+    extractor: exif
+    editable: false
+    permite_texto: false
+
+  video:
+    extensiones:
+      - ".mp4"
+      - ".mov"
+      - ".avi"
+      - ".mkv"
+      - ".m4v"
+      - ".webm"
+    categoria: audiovisual
+    extractor: ffprobe
+    editable: false
+    permite_texto: false
+
+  audio:
+    extensiones:
+      - ".wav"
+      - ".mp3"
+      - ".aiff"
+    categoria: audiovisual
+    extractor: metadata
+    editable: false
+    permite_texto: false
+
+  comprimido:
+    extensiones:
+      - ".zip"
+      - ".rar"
+      - ".7z"
+    categoria: comprimido
+    extractor: ninguno
+    editable: false
+    permite_texto: false
+
+  metadatos:
+
+    idioma: es
+
+    zona_horaria: Europe/Madrid
+
+    moneda: EUR
+
+    formato_fecha: ISO8601
+
+    clasificacion:
+      detectar_fechas: true
+      detectar_importes: true
+      detectar_personas: true
+      detectar_entidades: true
+      detectar_actividades: true
+
+    hash:
+      algoritmo: sha256
