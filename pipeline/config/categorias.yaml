@@ -1,0 +1,205 @@
+categorias:
+
+  actividad:
+    descripcion: >
+      Partida presupuestaria o ámbito de actuación al que se vincula
+      el documento, conforme al presupuesto de modificaciones sustanciales.
+
+    seleccion: unica
+
+    subcategorias:
+
+      administracion:
+        nombre: "Administración"
+        tipo_actuacion: gestion_soporte
+        conceptos:
+          - implementacion_servicios_pago_artistas
+          - atencion_cliente
+          - gestion_bases_datos
+          - contabilidad
+          - telefono_internet
+
+      comunicacion:
+        nombre: "Comunicación"
+        tipo_actuacion: actividad_proyecto
+        conceptos:
+          - webinars_usuarios_registrados
+          - redes_sociales
+          - zoom
+          - rollup_material_promocional
+
+      software:
+        nombre: "Software"
+        tipo_actuacion: actividad_proyecto
+        conceptos:
+          - soporte_mejora_tecnica
+          - servidor
+
+      alianzas_estrategicas:
+        nombre: "Alianzas estratégicas"
+        tipo_actuacion: actividad_proyecto
+        conceptos:
+          - programas_acompanamiento
+          - busqueda_patrocinios
+          - acuerdos_marco_festivales_circuitos
+          - acuerdos_asociaciones_plataformas_artistas
+          - festival_ta
+
+      comercializacion:
+        nombre: "Comercialización"
+        tipo_actuacion: actividad_proyecto
+        conceptos:
+          - stand_mercartes
+          - dietas_alojamiento_transporte_feria
+          - email_marketing
+          - campana_marketing_digital
+
+      formacion:
+        nombre: "Formación"
+        tipo_actuacion: actividad_proyecto
+        conceptos:
+          - analisis_datos
+
+      legal:
+        nombre: "Legal"
+        tipo_actuacion: gestion_soporte
+        conceptos:
+          - lopd
+
+      laboral:
+        nombre: "Laboral"
+        tipo_actuacion: gestion_soporte
+        conceptos:
+          - gestion_nomina_empleada_comercial
+
+      responsable_operaciones:
+        nombre: "Responsable de operaciones"
+        tipo_actuacion: direccion_coordinacion
+        conceptos:
+          - estrategia_supervision
+
+      investigacion:
+        nombre: "Investigación"
+        tipo_actuacion: actividad_proyecto
+        conceptos:
+          - data_analytics
+
+      gestoria:
+        nombre: "Gestoría"
+        tipo_actuacion: gestion_soporte
+        conceptos:
+          - gestoria
+          - prevencion_riesgos_laborales
+
+
+  tipo_documento:
+    descripcion: >
+      Naturaleza formal del archivo o función documental que cumple.
+      Un documento puede tener más de un tipo.
+
+    seleccion: multiple
+
+    subcategorias:
+      - fotografia
+      - captura
+      - certificado
+      - listado_asistentes
+      - informe
+      - dossier
+      - memoria
+      - programa
+      - presentacion
+      - factura
+      - justificante_pago
+      - nomina
+      - documento_seguridad_social
+      - contrato
+      - presupuesto
+      - correo_electronico
+      - formulario
+      - hoja_calculo
+      - video
+
+
+  funcion_documental:
+    descripcion: >
+      Función que cumple el documento dentro de la justificación.
+
+    seleccion: multiple
+
+    subcategorias:
+      - evidencia_actividad
+      - evidencia_resultado
+      - evidencia_difusion
+      - evidencia_participacion
+      - evidencia_colaboracion
+      - soporte_economico
+      - soporte_administrativo
+      - documento_planificacion
+      - documento_seguimiento
+      - documento_evaluacion
+
+
+  canal_comunicacion:
+    descripcion: >
+      Canal o formato de difusión utilizado en las acciones de comunicación.
+      Solo se aplica cuando el documento está relacionado con comunicación.
+
+    seleccion: multiple
+
+    subcategorias:
+      - newsletter
+      - redes_sociales
+      - sitio_web
+      - nota_prensa
+      - video
+      - creatividad_grafica
+      - correo_electronico
+      - webinar
+      - material_impreso
+
+
+  area_tecnica:
+    descripcion: >
+      Área tecnológica o funcional vinculada al contenido del documento.
+      Es independiente de la partida presupuestaria.
+
+    seleccion: multiple
+
+    subcategorias:
+      - desarrollo_software
+      - mantenimiento_software
+      - servidor
+      - seo
+      - ux
+      - analitica_web
+      - base_datos
+      - ecommerce
+      - integracion_pagos
+      - inteligencia_artificial
+      - analisis_datos
+
+
+  documentacion_administrativa:
+    descripcion: >
+      Tipo de documento relacionado con la concesión, ejecución,
+      modificación o justificación de la subvención.
+
+    seleccion: multiple
+
+    subcategorias:
+      - convocatoria
+      - bases_reguladoras
+      - solicitud
+      - memoria_presentada
+      - presupuesto_inicial
+      - resolucion_concesion
+      - aceptacion
+      - cronograma
+      - solicitud_modificacion
+      - autorizacion_modificacion
+      - presupuesto_modificado
+      - requerimiento
+      - subsanacion
+      - memoria_final
+      - cuenta_justificativa
