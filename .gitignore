@@ -1,0 +1,27 @@
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
+*.bak
+*.zip
+
+# Vídeos y grabaciones
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.m4v
+*.webm
+*.gif
+*.png
+
+# Audio pesado
+*.wav
+*.aiff
+
+# Carpetas locales o temporales
+temp/
+tmp/
+copias_seguridad/
+grabaciones/
+videos/
