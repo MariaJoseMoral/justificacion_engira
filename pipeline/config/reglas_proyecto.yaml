@@ -111,26 +111,45 @@ reglas_actividad:
       - movil
       - telecomunicaciones
 
-    - id: actividad_alianzas_acompanamiento
+  - id: actividad_administracion_servicios_pago
+    actividad: administracion
+    concepto_gasto: implementacion_servicios_pago_artistas
+
+    expresiones_exactas:
+      - "implementacion de servicios de pago"
+      - "plataforma de pago para artistas"
+      - "sistema de pago a artistas"
+
+    palabras_clave:
+      - pago
+      - artista
+      - artistas
+      - transferencia
+      - plataforma
+      - procesamiento
+      - pago seguro
+      - tarjeta
+
+  - id: actividad_alianzas_acompanamiento
     actividad: alianzas_estrategicas
     concepto_gasto: programas_acompanamiento
 
     expresiones_exactas:
-      - "programa de acompañamiento"
-      - "programas de acompañamiento"
-      - "acompañamiento a artistas"
-      - "acompañamiento para la distribución"
+     - "programa de acompanamiento"
+     - "programas de acompanamiento"
+     - "acompanamiento a artistas"
+     - "acompanamiento para la distribución"
 
     palabras_clave:
-      - acompañamiento
-      - mentoria
-      - asesoramiento
-      - sesion
-      - distribucion
-      - artista
-      - compañia
-      - cachet
-      - circuito
+     - acompanamiento
+     - mentoria
+     - asesoramiento
+     - sesion
+     - distribucion
+     - artista
+     - compania
+     - cachet
+     - circuito
 
 
   - id: actividad_alianzas_patrocinios
@@ -200,25 +219,25 @@ reglas_actividad:
       - festival
       - ta
 
-    - id: actividad_comunicacion_webinars
+  - id: actividad_comunicacion_webinars
     actividad: comunicacion
     concepto_gasto: webinars_usuarios_registrados
 
     expresiones_exactas:
-      - "webinar para usuarios"
-      - "webinars para usuarios registrados"
-      - "formacion de usuarios"
-      - "presentacion de herramientas engira"
+     - "webinar para usuarios"
+     - "webinars para usuarios registrados"
+     - "formacion de usuarios"
+     - "presentacion de herramientas engira"
 
     palabras_clave:
-      - webinar
-      - asistentes
-      - inscripcion
-      - zoom
-      - usuario
-      - usuarios
-      - demo
-      - herramientas
+     - webinar
+     - asistentes
+     - inscripcion
+     - zoom
+     - usuario
+     - usuarios
+     - demo
+     - herramientas
 
 
   - id: actividad_comunicacion_rrss
@@ -279,28 +298,28 @@ reglas_actividad:
       - lona
       - merchandising
 
-    - id: actividad_software_soporte
+  - id: actividad_software_soporte
     actividad: software
     concepto_gasto: soporte_mejora_tecnica
 
     expresiones_exactas:
-      - "soporte y mejora tecnica"
-      - "desarrollo de la plataforma"
-      - "mejoras de la plataforma"
-      - "mantenimiento de la plataforma"
+     - "soporte y mejora tecnica"
+     - "desarrollo de la plataforma"
+     - "mejoras de la plataforma"
+     - "mantenimiento de la plataforma"
 
     palabras_clave:
-      - desarrollo
-      - software
-      - plataforma
-      - soporte
-      - mantenimiento
-      - funcionalidad
-      - bug
-      - frontend
-      - backend
-      - api
-      - ux
+     - desarrollo
+     - software
+     - plataforma
+     - soporte
+     - mantenimiento
+     - funcionalidad
+     - bug
+     - frontend
+     - backend
+     - api
+     - ux
 
 
   - id: actividad_software_servidor
@@ -321,20 +340,20 @@ reglas_actividad:
       - alojamiento
       - ssl
 
-    - id: actividad_comercializacion_mercartes
+  - id: actividad_comercializacion_mercartes
     actividad: comercializacion
     concepto_gasto: stand_mercartes
 
     expresiones_exactas:
-      - "stand mercartes"
-      - "participacion en mercartes"
-      - "feria mercartes"
+     - "stand mercartes"
+     - "participacion en mercartes"
+     - "feria mercartes"
 
     palabras_clave:
-      - mercartes
-      - stand
-      - feria
-      - valladolid
+     - mercartes
+     - stand
+     - feria
+     - valladolid
 
 
   - id: actividad_comercializacion_viaje_mercartes
@@ -403,7 +422,7 @@ reglas_actividad:
       - seo
       - analytics
 
-    - id: actividad_formacion_analisis_datos
+  - id: actividad_formacion_analisis_datos
     actividad: formacion
     concepto_gasto: analisis_datos
 
@@ -461,10 +480,10 @@ reglas_actividad:
     excluir:
       - curso
       - formacion
-      - certificado
+      - certificacion
       - bootcamp
 
-    - id: actividad_legal_lopd
+  - id: actividad_legal_lopd
     actividad: legal
     concepto_gasto: lopd
 
@@ -743,9 +762,7 @@ reglas_funcion_documental:
       - captura
       - certificado
       - informe
-      - dossier
       - memoria
-      - programa
       - presentacion
       - video
 
