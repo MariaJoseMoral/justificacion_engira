@@ -20,7 +20,11 @@ fechas:
   fecha_limite_pagos: "2026-09-30"
 
 repositorio:
-  raiz: "../../datos_engira"
+  raiz: "../.."
+
+
+datos:
+  raiz: "../datos_engira"
 
 rutas_entrada:
   bases_y_resolucion: "00_BASES_Y_RESOLUCION"
@@ -36,10 +40,10 @@ rutas_entrada:
   memoria_final: "10_MEMORIA_FINAL"
 
 rutas_salida:
-  outputs: "outputs"
-  logs: "logs"
-  inventario: "outputs/inventario_documental.csv"
-  informe: "outputs/informe_inventario.md"
+  outputs: "pipeline/outputs"
+  logs: "pipeline/logs"
+  inventario: "pipeline/outputs/inventario_documental.csv"
+  informe: "pipeline/outputs/informe_inventario.md"
 
 opciones:
   incluir_archivos_ocultos: false
