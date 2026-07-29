@@ -13,7 +13,6 @@ Thumbs.db
 *.m4v
 *.webm
 *.gif
-*.png
 
 # Audio pesado
 *.wav
@@ -25,3 +24,14 @@ tmp/
 copias_seguridad/
 grabaciones/
 videos/
+
+# Entorno virtual y Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Resultados temporales del pipeline
+pipeline/logs/*
+pipeline/outputs/~$*
+

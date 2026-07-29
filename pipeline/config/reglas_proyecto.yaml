@@ -1,0 +1,899 @@
+proyecto: engira_2025_2026
+
+version: "1.0"
+
+descripcion: >
+  Reglas específicas para clasificar la documentación del proyecto enGira!
+  conforme al presupuesto de modificaciones sustanciales.
+
+configuracion:
+
+  normalizacion:
+    minusculas: true
+    eliminar_tildes: true
+    eliminar_signos: true
+    reemplazar_guiones_por_espacios: true
+
+  campos_analizados:
+    nombre_archivo: 3
+    ruta_archivo: 2
+    texto_documento: 1
+    metadatos: 1
+
+  umbrales:
+    clasificacion_automatica: 6
+    revision_manual: 3
+    sin_clasificar: 0
+
+  coincidencia:
+    expresiones_exactas: 3
+    palabras_clave: 1
+    palabras_excluidas: -3
+
+reglas_actividad:
+
+  - id: actividad_administracion_atencion_cliente
+    actividad: administracion
+    concepto_gasto: atencion_cliente
+
+    expresiones_exactas:
+      - "atencion al cliente"
+      - "soporte a usuarios"
+      - "atencion a usuarios"
+
+    palabras_clave:
+      - consulta
+      - incidencia
+      - soporte
+      - usuario
+      - cliente
+      - ayuda
+
+
+  - id: actividad_administracion_bases_datos
+    actividad: administracion
+    concepto_gasto: gestion_bases_datos
+
+    expresiones_exactas:
+      - "gestion de bases de datos"
+      - "base de datos"
+      - "bases de datos"
+
+    palabras_clave:
+      - database
+      - dataset
+      - registros
+      - programadores
+      - artistas
+      - espacios
+      - contactos
+
+    excluir:
+      - lopd
+      - proteccion de datos
+
+
+  - id: actividad_administracion_contabilidad
+    actividad: administracion
+    concepto_gasto: contabilidad
+
+    expresiones_exactas:
+      - "gestion contable"
+      - "contabilidad del proyecto"
+
+    palabras_clave:
+      - contabilidad
+      - contable
+      - ingresos
+      - gastos
+      - pyg
+      - libro mayor
+      - asiento
+
+    excluir:
+      - gestoria
+      - asesoria
+
+
+  - id: actividad_administracion_telefono
+    actividad: administracion
+    concepto_gasto: telefono_internet
+
+    expresiones_exactas:
+      - "telefono e internet"
+      - "telefono internet"
+      - "servicio de internet"
+
+    palabras_clave:
+      - telefono
+      - internet
+      - fibra
+      - movil
+      - telecomunicaciones
+
+  - id: actividad_administracion_servicios_pago
+    actividad: administracion
+    concepto_gasto: implementacion_servicios_pago_artistas
+
+    expresiones_exactas:
+      - "implementacion de servicios de pago"
+      - "plataforma de pago para artistas"
+      - "sistema de pago a artistas"
+
+    palabras_clave:
+      - pago
+      - artista
+      - artistas
+      - transferencia
+      - plataforma
+      - procesamiento
+      - pago seguro
+      - tarjeta
+
+  - id: actividad_alianzas_acompanamiento
+    actividad: alianzas_estrategicas
+    concepto_gasto: programas_acompanamiento
+
+    expresiones_exactas:
+     - "programa de acompanamiento"
+     - "programas de acompanamiento"
+     - "acompanamiento a artistas"
+     - "acompanamiento para la distribución"
+
+    palabras_clave:
+     - acompanamiento
+     - mentoria
+     - asesoramiento
+     - sesion
+     - distribucion
+     - artista
+     - compania
+     - cachet
+     - circuito
+
+
+  - id: actividad_alianzas_patrocinios
+    actividad: alianzas_estrategicas
+    concepto_gasto: busqueda_patrocinios
+
+    expresiones_exactas:
+      - "busqueda de patrocinios"
+      - "captacion de patrocinadores"
+      - "propuesta de patrocinio"
+
+    palabras_clave:
+      - patrocinio
+      - patrocinador
+      - sponsor
+      - financiacion
+      - colaboracion empresarial
+      - dossier patrocinio
+
+
+  - id: actividad_alianzas_festivales
+    actividad: alianzas_estrategicas
+    concepto_gasto: acuerdos_marco_festivales_circuitos
+
+    expresiones_exactas:
+      - "acuerdo marco"
+      - "acuerdo con festivales"
+      - "acuerdo con circuitos"
+      - "alianza con festivales"
+
+    palabras_clave:
+      - festival
+      - circuito
+      - convenio
+      - acuerdo
+      - colaboracion
+      - programacion
+
+
+  - id: actividad_alianzas_asociaciones
+    actividad: alianzas_estrategicas
+    concepto_gasto: acuerdos_asociaciones_plataformas_artistas
+
+    expresiones_exactas:
+      - "acuerdo con asociaciones"
+      - "acuerdo con plataformas"
+      - "plataformas de artistas"
+      - "asociaciones de artistas"
+
+    palabras_clave:
+      - asociacion
+      - plataforma
+      - artistas
+      - convenio
+      - colaboracion
+      - acuerdo
+
+
+  - id: actividad_alianzas_festival_ta
+    actividad: alianzas_estrategicas
+    concepto_gasto: festival_ta
+
+    expresiones_exactas:
+      - "festival ta"
+
+    palabras_clave:
+      - festival
+      - ta
+
+  - id: actividad_comunicacion_webinars
+    actividad: comunicacion
+    concepto_gasto: webinars_usuarios_registrados
+
+    expresiones_exactas:
+     - "webinar para usuarios"
+     - "webinars para usuarios registrados"
+     - "formacion de usuarios"
+     - "presentacion de herramientas engira"
+
+    palabras_clave:
+     - webinar
+     - asistentes
+     - inscripcion
+     - zoom
+     - usuario
+     - usuarios
+     - demo
+     - herramientas
+
+
+  - id: actividad_comunicacion_rrss
+    actividad: comunicacion
+    concepto_gasto: redes_sociales
+
+    expresiones_exactas:
+      - "redes sociales"
+      - "campaña en redes"
+      - "publicacion en redes"
+
+    palabras_clave:
+      - instagram
+      - linkedin
+      - facebook
+      - rrss
+      - post
+      - carrusel
+      - reel
+      - engagement
+      - alcance
+      - seguidores
+
+
+  - id: actividad_comunicacion_zoom
+    actividad: comunicacion
+    concepto_gasto: zoom
+
+    expresiones_exactas:
+      - "suscripcion zoom"
+      - "zoom video communications"
+      - "zoom workplace"
+
+    palabras_clave:
+      - zoom
+
+    excluir:
+      - captura reunion
+      - resumen sesion
+
+
+  - id: actividad_comunicacion_material
+    actividad: comunicacion
+    concepto_gasto: rollup_material_promocional
+
+    expresiones_exactas:
+      - "material promocional"
+      - "roll up"
+      - "rollup"
+
+    palabras_clave:
+      - imprenta
+      - impresion
+      - cartel
+      - folleto
+      - flyer
+      - banner
+      - lona
+      - merchandising
+
+  - id: actividad_software_soporte
+    actividad: software
+    concepto_gasto: soporte_mejora_tecnica
+
+    expresiones_exactas:
+     - "soporte y mejora tecnica"
+     - "desarrollo de la plataforma"
+     - "mejoras de la plataforma"
+     - "mantenimiento de la plataforma"
+
+    palabras_clave:
+     - desarrollo
+     - software
+     - plataforma
+     - soporte
+     - mantenimiento
+     - funcionalidad
+     - bug
+     - frontend
+     - backend
+     - api
+     - ux
+
+
+  - id: actividad_software_servidor
+    actividad: software
+    concepto_gasto: servidor
+
+    expresiones_exactas:
+      - "alojamiento web"
+      - "servicio de servidor"
+      - "hosting de la plataforma"
+
+    palabras_clave:
+      - servidor
+      - hosting
+      - dominio
+      - cloud
+      - almacenamiento
+      - alojamiento
+      - ssl
+
+  - id: actividad_comercializacion_mercartes
+    actividad: comercializacion
+    concepto_gasto: stand_mercartes
+
+    expresiones_exactas:
+     - "stand mercartes"
+     - "participacion en mercartes"
+     - "feria mercartes"
+
+    palabras_clave:
+     - mercartes
+     - stand
+     - feria
+     - valladolid
+
+
+  - id: actividad_comercializacion_viaje_mercartes
+    actividad: comercializacion
+    concepto_gasto: dietas_alojamiento_transporte_feria
+
+    expresiones_exactas:
+      - "dietas mercartes"
+      - "alojamiento mercartes"
+      - "transporte mercartes"
+      - "viaje a mercartes"
+      - "gastos de feria"
+
+    palabras_clave:
+      - mercartes
+      - hotel
+      - alojamiento
+      - billete
+      - tren
+      - transporte
+      - dieta
+      - desplazamiento
+      - viaje
+
+
+  - id: actividad_comercializacion_email_marketing
+    actividad: comercializacion
+    concepto_gasto: email_marketing
+
+    expresiones_exactas:
+      - "email marketing"
+      - "campaña de correo"
+      - "campaña de mailing"
+      - "envio de newsletter"
+
+    palabras_clave:
+      - brevo
+      - mailing
+      - newsletter
+      - campaña
+      - apertura
+      - click
+      - ctr
+      - ctor
+      - rebote
+
+
+  - id: actividad_comercializacion_marketing_digital
+    actividad: comercializacion
+    concepto_gasto: campana_marketing_digital
+
+    expresiones_exactas:
+      - "campaña de marketing digital"
+      - "estrategia de marketing digital"
+      - "plan de marketing digital"
+
+    palabras_clave:
+      - marketing
+      - campaña
+      - conversion
+      - captacion
+      - trafico
+      - audiencia
+      - segmentacion
+      - contenidos
+      - seo
+      - analytics
+
+  - id: actividad_formacion_analisis_datos
+    actividad: formacion
+    concepto_gasto: analisis_datos
+
+    expresiones_exactas:
+      - "formacion en analisis de datos"
+      - "curso de analisis de datos"
+      - "formacion data analytics"
+
+    palabras_clave:
+      - formacion
+      - curso
+      - certificacion
+      - bootcamp
+      - aprendizaje
+      - analisis
+      - datos
+
+    requerir_combinacion:
+      - grupo:
+          - formacion
+          - curso
+          - certificacion
+          - bootcamp
+        minimo: 1
+      - grupo:
+          - datos
+          - analytics
+          - python
+          - power bi
+        minimo: 1
+
+
+  - id: actividad_investigacion_data_analytics
+    actividad: investigacion
+    concepto_gasto: data_analytics
+
+    expresiones_exactas:
+      - "investigacion data analytics"
+      - "analisis de rendimiento"
+      - "analisis de datos del proyecto"
+      - "estudio de datos"
+
+    palabras_clave:
+      - data
+      - analytics
+      - analisis
+      - datos
+      - indicadores
+      - resultados
+      - dashboard
+      - power bi
+      - python
+      - kpi
+
+    excluir:
+      - curso
+      - formacion
+      - certificacion
+      - bootcamp
+
+  - id: actividad_legal_lopd
+    actividad: legal
+    concepto_gasto: lopd
+
+    expresiones_exactas:
+      - "proteccion de datos"
+      - "adaptacion lopd"
+      - "cumplimiento rgpd"
+      - "politica de privacidad"
+
+    palabras_clave:
+      - lopd
+      - rgpd
+      - privacidad
+      - cookies
+      - tratamiento
+      - datos personales
+
+
+  - id: actividad_laboral_nomina
+    actividad: laboral
+    concepto_gasto: gestion_nomina_empleada_comercial
+
+    expresiones_exactas:
+      - "gestion de nomina"
+      - "nomina empleada comercial"
+      - "gestion laboral empleada"
+
+    palabras_clave:
+      - nomina
+      - laboral
+      - trabajadora
+      - empleada
+      - contrato
+      - seguros sociales
+
+
+  - id: actividad_operaciones
+    actividad: responsable_operaciones
+    concepto_gasto: estrategia_supervision
+
+    expresiones_exactas:
+      - "estrategia y supervision"
+      - "responsable de operaciones"
+      - "direccion del proyecto"
+      - "coordinacion del proyecto"
+
+    palabras_clave:
+      - estrategia
+      - supervision
+      - coordinacion
+      - seguimiento
+      - planificacion
+      - operaciones
+      - direccion
+
+
+  - id: actividad_gestoria
+    actividad: gestoria
+    concepto_gasto: gestoria
+
+    expresiones_exactas:
+      - "servicios de gestoria"
+      - "asesoria fiscal"
+      - "asesoria contable"
+      - "asesoria laboral"
+
+    palabras_clave:
+      - gestoria
+      - asesoria
+      - fiscal
+      - impuestos
+      - modelo tributario
+
+
+  - id: actividad_gestoria_prl
+    actividad: gestoria
+    concepto_gasto: prevencion_riesgos_laborales
+
+    expresiones_exactas:
+      - "prevencion de riesgos laborales"
+      - "servicio de prevencion"
+      - "evaluacion de riesgos"
+
+    palabras_clave:
+      - prl
+      - prevencion
+      - riesgos
+      - vigilancia
+      - laboral
+
+
+reglas_tipo_documento:
+
+  - tipo_documento: factura
+    expresiones_exactas:
+      - "factura"
+      - "invoice"
+    patrones_nombre:
+      - "^factura"
+      - "factura[_ -]?[0-9]"
+      - "invoice[_ -]?[0-9]"
+    palabras_clave:
+      - base imponible
+      - iva
+      - total factura
+      - numero de factura
+      - proveedor
+
+
+  - tipo_documento: justificante_pago
+    expresiones_exactas:
+      - "justificante de pago"
+      - "comprobante de transferencia"
+      - "transferencia realizada"
+      - "orden de pago"
+    palabras_clave:
+      - iban
+      - beneficiario
+      - ordenante
+      - fecha valor
+      - transferencia
+
+
+  - tipo_documento: nomina
+    expresiones_exactas:
+      - "recibo individual justificativo del pago de salarios"
+      - "nomina"
+    palabras_clave:
+      - devengos
+      - deducciones
+      - liquido a percibir
+      - salario base
+
+
+  - tipo_documento: documento_seguridad_social
+    expresiones_exactas:
+      - "relacion nominal de trabajadores"
+      - "recibo de liquidacion de cotizaciones"
+      - "seguridad social"
+    palabras_clave:
+      - rnt
+      - rlc
+      - tgss
+      - cotizacion
+
+
+  - tipo_documento: contrato
+    expresiones_exactas:
+      - "contrato de trabajo"
+      - "contrato de prestacion de servicios"
+      - "acuerdo de colaboracion"
+    palabras_clave:
+      - partes
+      - clausulas
+      - objeto del contrato
+      - vigencia
+      - firma
+
+
+  - tipo_documento: presupuesto
+    expresiones_exactas:
+      - "presupuesto de ingresos y gastos"
+      - "presupuesto modificado"
+      - "presupuesto de modificaciones sustanciales"
+    palabras_clave:
+      - partida
+      - concepto de gasto
+      - importe previsto
+
+
+  - tipo_documento: informe
+    patrones_nombre:
+      - "^informe"
+      - "informe[_ -]"
+      - "reporte"
+      - "report"
+    palabras_clave:
+      - resultados
+      - conclusiones
+      - metodologia
+      - indicadores
+
+
+  - tipo_documento: memoria
+    patrones_nombre:
+      - "^memoria"
+      - "memoria[_ -]"
+    palabras_clave:
+      - objetivos
+      - actividades realizadas
+      - resultados obtenidos
+
+
+  - tipo_documento: certificado
+    patrones_nombre:
+      - "^certificado"
+      - "certificacion"
+    palabras_clave:
+      - certifica
+      - hace constar
+      - firmado
+
+
+  - tipo_documento: listado_asistentes
+    expresiones_exactas:
+      - "listado de asistentes"
+      - "lista de participantes"
+      - "registro de inscripciones"
+    palabras_clave:
+      - nombre
+      - apellidos
+      - correo electronico
+      - asistencia
+
+
+  - tipo_documento: presentacion
+    extensiones:
+      - ".ppt"
+      - ".pptx"
+      - ".odp"
+    patrones_nombre:
+      - "presentacion"
+      - "diapositivas"
+
+
+  - tipo_documento: hoja_calculo
+    extensiones:
+      - ".xls"
+      - ".xlsx"
+      - ".ods"
+      - ".csv"
+
+
+  - tipo_documento: fotografia
+    extensiones:
+      - ".jpg"
+      - ".jpeg"
+      - ".png"
+      - ".heic"
+      - ".webp"
+
+    excluir_nombre:
+      - captura
+      - screenshot
+
+
+  - tipo_documento: captura
+    patrones_nombre:
+      - "captura"
+      - "screenshot"
+      - "pantallazo"
+
+
+  - tipo_documento: video
+    extensiones:
+      - ".mp4"
+      - ".mov"
+      - ".avi"
+      - ".mkv"
+
+reglas_funcion_documental:
+
+  - funcion_documental: soporte_economico
+    tipos_documento:
+      - factura
+      - justificante_pago
+      - nomina
+      - documento_seguridad_social
+      - contrato
+      - presupuesto
+
+
+  - funcion_documental: evidencia_actividad
+    tipos_documento:
+      - fotografia
+      - captura
+      - certificado
+      - informe
+      - memoria
+      - presentacion
+      - video
+
+
+  - funcion_documental: evidencia_participacion
+    expresiones_exactas:
+      - "listado de asistentes"
+      - "lista de participantes"
+      - "registro de inscripciones"
+      - "certificado de asistencia"
+
+    tipos_documento:
+      - listado_asistentes
+      - certificado
+
+
+  - funcion_documental: evidencia_difusion
+    palabras_clave:
+      - newsletter
+      - instagram
+      - linkedin
+      - redes sociales
+      - nota de prensa
+      - campaña
+      - publicación
+      - alcance
+
+
+  - funcion_documental: evidencia_resultado
+    palabras_clave:
+      - resultados
+      - indicadores
+      - kpi
+      - impacto
+      - alcance
+      - conversion
+      - asistentes
+      - acuerdos alcanzados
+
+
+  - funcion_documental: soporte_administrativo
+    tipos_administrativos:
+      - convocatoria
+      - bases_reguladoras
+      - solicitud
+      - resolucion_concesion
+      - solicitud_modificacion
+      - autorizacion_modificacion
+      - requerimiento
+      - subsanacion
+      - cuenta_justificativa
+
+reglas_documentacion_administrativa:
+
+  - documentacion_administrativa: solicitud_modificacion
+    expresiones_exactas:
+      - "solicitud de modificacion"
+      - "modificacion sustancial"
+      - "peticion de modificacion"
+
+
+  - documentacion_administrativa: autorizacion_modificacion
+    expresiones_exactas:
+      - "autorizacion de modificacion"
+      - "se autoriza la modificacion"
+      - "resolucion de modificacion"
+
+
+  - documentacion_administrativa: presupuesto_modificado
+    expresiones_exactas:
+      - "presupuesto de modificaciones sustanciales"
+      - "presupuesto modificado"
+
+
+  - documentacion_administrativa: resolucion_concesion
+    expresiones_exactas:
+      - "resolucion de concesion"
+      - "concesion de la ayuda"
+      - "beneficiarios de las ayudas"
+
+
+  - documentacion_administrativa: requerimiento
+    palabras_clave:
+      - requerimiento
+      - documentacion requerida
+      - plazo de subsanacion
+
+
+  - documentacion_administrativa: subsanacion
+    palabras_clave:
+      - subsanacion
+      - aporta documentacion
+      - contestacion al requerimiento
+
+
+  - documentacion_administrativa: memoria_final
+    expresiones_exactas:
+      - "memoria final"
+      - "memoria de actividades"
+      - "memoria justificativa"
+
+
+  - documentacion_administrativa: cuenta_justificativa
+    expresiones_exactas:
+      - "cuenta justificativa"
+      - "memoria economica"
+      - "relacion clasificada de gastos"
+
+resolucion_conflictos:
+
+  prioridad_actividad:
+    - coincidencia_concepto_exacto
+    - coincidencia_nombre_archivo
+    - coincidencia_ruta
+    - coincidencia_texto
+
+  permitir_multiples:
+    tipo_documento: true
+    funcion_documental: true
+    canal_comunicacion: true
+    area_tecnica: true
+
+  seleccion_unica:
+    actividad: true
+    concepto_gasto: true
+    documentacion_administrativa: true
+
+  enviar_revision_manual_si:
+    - empate_actividad
+    - actividad_sin_concepto
+    - concepto_sin_actividad
+    - puntuacion_inferior_umbral
+    - coincidencia_solo_en_texto
+    - documento_economico_sin_partida

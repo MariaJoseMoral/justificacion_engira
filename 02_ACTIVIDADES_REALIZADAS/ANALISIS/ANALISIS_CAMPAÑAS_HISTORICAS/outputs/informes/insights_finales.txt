@@ -1,7 +1,0 @@
---- INFORME ESTRATÉGICO MARKETING DIGITAL ---
-1. El mejor día para maximizar el engagement es el Miércoles.
-2. El mes con mayor engagement histórico es el mes 4.
-3. La temática con mejor desempeño (Engagement Score) es: convocatorias.
-4. Correlación Volumen-Apertura: -0.15 (No hay una correlación clara).
-5. Se han identificado 13 campañas de 'Top Performance' (Criterio P75).
-6. 2 campañas son consideradas 'Outliers de Éxito' (>2 std en Click Rate).
