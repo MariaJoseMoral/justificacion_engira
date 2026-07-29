@@ -292,10 +292,10 @@ class GeneradorMemoria:
         texto = "## 8. ANEXOS\n\n"
         
         texto += "### A. Inventario completo de documentos\n\n"
-        texto += "Ver archivo: `inventario_documental.csv`\n\n"
+        texto += "Ver archivo: `../01_inventario/inventario_documental.csv`\n\n"
         
         texto += "### B. Reporte de clasificaciones\n\n"
-        texto += "Ver archivo: `reporte_clasificaciones.txt`\n\n"
+        texto += "Ver archivo: `../01_inventario/reporte_clasificaciones.txt`\n\n"
         
         texto += "### C. Entidades normalizadas\n\n"
         resumen = self.entidades.get("resumen", {})

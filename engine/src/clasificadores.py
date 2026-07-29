@@ -229,15 +229,8 @@ class ClasificadorFuncional:
         nombre = documento.get("nombre", "").lower()
         ruta = documento.get("ruta_relativa", "").lower()
         
-        # Buscar patrones de actividades conocidas
-        actividades = {
-            "engira": r"engira|open call",
-            "mercartes": r"mercartes",
-            "comunicacion": r"instagram|redes|comunicaci[oó]n|social media",
-            "desarrollo": r"desarrollo|platform|web|app",
-            "formacion": r"formaci[oó]n|training|workshop",
-            "alianzas": r"alianza|partner|colaboraci[oó]n",
-        }
+        # Project-specific terms belong in configuration, never in the engine.
+        actividades = self.config.get("clasificacion", {}).get("actividades", {})
         
         for actividad, patron in actividades.items():
             if re.search(patron, nombre) or re.search(patron, ruta):

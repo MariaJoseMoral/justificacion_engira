@@ -1,17 +1,25 @@
 """Módulo de detección de incidencias y validación."""
 
-from typing import Dict, List, Tuple, Optional
+from typing import Any, Dict, Iterable, List, Tuple, Optional
 from collections import defaultdict
+from datetime import date
+
+from .economica import FinancialRecord
+from .evidencias import EvidenceLink
+from .plan import CanonicalPlan
 
 
 class ValidadorIncidencias:
     """Detecta inconsistencias y problemas en la documentación."""
     
-    def __init__(self, inventario: List[Dict], relaciones: List[Dict], entidades: Dict):
+    def __init__(
+        self, inventario: List[Dict], relaciones: List[Dict], entidades: Dict, config: Dict | None = None
+    ):
         """Inicializa el validador."""
         self.inventario = inventario
         self.relaciones = relaciones
         self.entidades = entidades
+        self.config = config or {}
         self.incidencias = []
     
     def validar(self) -> List[Dict]:
@@ -217,9 +225,11 @@ class ValidadorIncidencias:
         fechas = self.entidades.get("fechas", [])
         
         # Buscar fechas fuera del período de ejecución
-        # Suponiendo período de ejecución: 2025-07-01 a 2026-06-30
-        periodo_inicio = "2025-07"
-        periodo_fin = "2026-06"
+        fechas_config = self.config.get("fechas", {})
+        periodo_inicio = str(fechas_config.get("inicio_ejecucion", ""))[:7]
+        periodo_fin = str(fechas_config.get("fin_ejecucion", ""))[:7]
+        if not periodo_inicio or not periodo_fin:
+            return
         
         for fecha in fechas:
             # Validar formato ISO (YYYY-MM-DD)
@@ -289,3 +299,74 @@ def generar_reporte_incidencias(incidencias: List[Dict]) -> str:
                 reporte += f"  Recomendación: {inc.get('recomendacion', 'N/A')}\n"
     
     return reporte
+
+
+def validar_plan_y_evidencias(
+    plan: CanonicalPlan,
+    links: Iterable[EvidenceLink],
+    financial_records: Iterable[FinancialRecord],
+    config: dict[str, Any],
+) -> list[dict[str, Any]]:
+    """Validate traceability rules specific to plan-led final outputs."""
+    incidencias: list[dict[str, Any]] = []
+    action_ids = [action.id for action in plan.actions]
+    if len(action_ids) != len(set(action_ids)):
+        incidencias.append({
+            "tipo": "ids_accion_duplicados",
+            "severidad": "crítica",
+            "descripcion": "El plan canónico contiene identificadores de acción duplicados.",
+            "recomendacion": "Revisar las actuaciones del cronograma aprobado.",
+        })
+    start = str(config.get("fechas", {}).get("inicio_ejecucion", ""))
+    end = str(config.get("fechas", {}).get("fin_ejecucion", ""))
+    for action in plan.actions:
+        if action.approved_budget is not None and action.approved_budget < 0:
+            incidencias.append({
+                "tipo": "presupuesto_aprobado_invalido",
+                "severidad": "alta",
+                "descripcion": f"La acción {action.id} tiene presupuesto negativo.",
+                "recomendacion": "Revisar el cronograma aprobado.",
+            })
+        if action.period_start and action.period_end and start and end:
+            if action.period_start > end or action.period_end < start:
+                incidencias.append({
+                    "tipo": "accion_fuera_periodo",
+                    "severidad": "alta",
+                    "actividad": action.id,
+                    "descripcion": f"La acción aprobada '{action.title}' queda fuera del periodo configurado.",
+                    "recomendacion": "Verificar configuración o cronograma aprobado.",
+                })
+
+    links_by_action: dict[str, list[EvidenceLink]] = defaultdict(list)
+    for link in links:
+        if link.action_id:
+            links_by_action[link.action_id].append(link)
+        if link.review_state == "pendiente_revision":
+            incidencias.append({
+                "tipo": "vinculo_evidencia_pendiente",
+                "severidad": "media",
+                "documento": link.document_path,
+                "actividad": link.action_id,
+                "descripcion": "El vínculo entre evidencia y actuación aprobada requiere revisión humana.",
+                "recomendacion": "Confirmar o corregir la actuación asociada.",
+            })
+    for action in plan.actions:
+        if not links_by_action.get(action.id):
+            incidencias.append({
+                "tipo": "accion_sin_evidencia_vinculada",
+                "severidad": "media",
+                "actividad": action.id,
+                "descripcion": f"No hay evidencia vinculada a la acción aprobada '{action.title}'.",
+                "recomendacion": "Aportar evidencia o documentar la no ejecución.",
+            })
+
+    for record in financial_records:
+        if record.action_id not in action_ids:
+            incidencias.append({
+                "tipo": "gasto_sin_accion_aprobada",
+                "severidad": "alta",
+                "documento": record.document_path,
+                "descripcion": "Un gasto cargado no tiene acción aprobada válida.",
+                "recomendacion": "Revisar la trazabilidad económica.",
+            })
+    return incidencias

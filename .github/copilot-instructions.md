@@ -1,200 +1,55 @@
-# Copilot Instructions for justificacion_engira
+# Copilot Instructions for `justificacion_engira`
 
-## Project Overview
+## Project model
 
-This is a document discovery and cataloging pipeline for the enGira! project, a cultural funding justification system managed by the Spanish Ministry of Culture. The pipeline scans a hierarchical folder structure containing project documentation and generates an inventory and analysis report.
+This repository contains the Python engine for producing a traceable grant-justification record from project documents. Source documents are intentionally kept outside Git; the configured data root (`datos.raiz` in `engine/config/proyecto.yaml`) is the input to the process. Do not add source project documentation to the repository.
 
-**Key Context:**
-- Project: enGira! (Plataforma digital para la movilidad, distribución y acompañamiento de profesionales de las artes escénicas)
-- Grant: Ministry of Culture - Ayudas para la acción y la promoción cultural
-- Amount: €25,000 (€34,180 total budget)
-- Execution period: 2025-07-01 to 2026-06-30
-- Grant ID: 19770-02535886
+`workflow.md` defines the target phase model: inventory, metadata extraction, classification, entity extraction and document cross-referencing, incidence detection, and memory generation. The inventory is the source of truth: preserve each generated statement's traceability to its source document.
 
-## Architecture
+## Architecture and data flow
 
-The pipeline follows a config-driven architecture with three main components:
+- `engine/run_pipeline.py` is the orchestration entry point. It loads `config/proyecto.yaml`, discovers documents, writes outputs, then invokes entity extraction, validation, and `GeneradorMemoria`.
+- `engine/src/inventario.py` discovers files under each configured `rutas_entrada` directory and tags every record with its logical area. It currently returns dictionaries with `area` and `ruta`.
+- `engine/src/extractores.py` extracts text and metadata from PDFs, Office files, and images, then detects dates, monetary amounts, NIF/CIFs, and URLs.
+- `engine/src/clasificadores.py` applies built-in heuristic document and functional classifications. `engine/src/entidades.py` normalizes extracted entities and creates relations by amount, NIF/CIF, activity, and date. `engine/src/validacion.py` reports document, payment, evidence, duplication, amount, and date issues. `engine/src/memoria.py` renders the final Markdown memory from those enriched records.
+- `engine/config/proyecto.yaml` is the runtime configuration. It defines project metadata, external input folders, output paths, and file-type metadata. `categorias.yaml` and `reglas_proyecto.yaml` define the intended taxonomy and project-specific rule set; they are not loaded by the current Python runtime, so wire them in explicitly when implementing configuration-driven classification.
 
-1. **Configuration Layer** (`engine/config/*.yaml`)
-   - `proyecto.yaml` - Central configuration defining the entire document structure, filing deadlines, allowed file types, and processing options
-   - `categorias.yaml` - Document classification rules
-   - `reglas_proyecto.yaml` - Project-specific rules and validation
+## Commands
 
-2. **Core Logic** (`engine/src/inventario.py`)
-   - `buscar_documentos()` - Recursively scans input folders defined in `proyecto.yaml` to locate all files
-   - Uses `Path.rglob()` for recursive traversal; respects `rutas_entrada` mapping which maps funding activity areas to folder names
-
-3. **Entry Point** (`engine/run_pipeline.py`)
-   - `cargar_configuracion()` - Loads YAML, validates required sections, handles encoding as UTF-8
-   - `main()` - Orchestrates the pipeline: loads config → discovers documents → formats output
-   - All errors caught and logged to stderr; returns exit code 1 on failure
-
-## Key Conventions
-
-### Configuration System
-- All user-facing settings must go in `engine/config/proyecto.yaml`
-- Required sections: `proyecto`, `subvencion`, `fechas`, `rutas_entrada`, `rutas_salida`
-- File types are extensible via the `tipos_archivos` dict in `proyecto.yaml` (each entry specifies: extensions, category, extractor, editability, text capability)
-- Input folder names (e.g., `02_ACTIVIDADES_REALIZADAS`) are defined in `rutas_entrada` and must physically exist or the pipeline continues gracefully
-
-### Path Handling
-- Repository root is calculated relative to the pipeline script: `Path(__file__).resolve().parent`
-- All paths use `Path` objects (pathlib), not strings
-- Path expansion via `.expanduser()` for user home directories
-- File discovery uses `rglob("*")` which includes all file types; filtering by extension happens during processing (not during discovery yet)
-
-### Error Handling
-- Catches YAML parsing errors, missing config sections, file/directory errors separately
-- Logs to stderr with `print(..., file=sys.stderr)`
-- Returns exit code 1 on any exception; 0 on success
-- Validates config structure at startup (missing required sections raise ValueError immediately)
-
-### Encoding & Localization
-- All text I/O assumes UTF-8 encoding (specified in file open calls)
-- Dates follow ISO 8601 format (YYYY-MM-DD)
-- Currency is EUR; monetary formatting uses `.2f` (e.g., `€25000.00`)
-- Spanish language for console output and error messages
-
-## Developer Workflows & Contribution Guidelines
-
-### Branching Strategy
-
-Follow a simplified git flow:
-- `main` - Production-ready code, stable state
-- `develop` - Integration branch for features, always deployable
-- Feature branches - `feature/description` (e.g., `feature/add-hash-extraction`)
-- Bugfix branches - `bugfix/description` (e.g., `bugfix/config-path-mismatch`)
-
-**Branch naming convention:** `<type>/<kebab-case-description>` prefixed with your username when working locally (e.g., `usuario/feature/add-text-extraction`)
-
-### Commit Messages
-
-Use clear, imperative-mood commit messages (Spanish preferred):
-```
-<type>(<scope>): <description>
-
-<optional detailed explanation>
-
-Closes #<issue_number> (if applicable)
-```
-
-**Types:** `feat` (new feature), `fix` (bug fix), `refactor` (code restructure), `docs` (documentation), `test` (tests), `chore` (config/deps)
-
-**Scope examples:** `config`, `inventario`, `pipeline`, `docs`
-
-Example:
-```
-feat(inventario): implementar extracción de hash SHA256
-
-Añade cálculo automático de hash SHA256 para todos los archivos descubiertos.
-Implementa deduplicación basada en hash en run_pipeline.py.
-
-Closes #42
-```
-
-### Pull Request Workflow
-
-1. Create feature branch from `develop`
-2. Make changes and commit with clear messages
-3. Push to remote and open a pull request against `develop`
-4. Request review from maintainers
-5. Pass all checks (tests, linting, config validation)
-6. Merge to `develop` once approved
-7. Periodically merge `develop` → `main` for releases
-
-### Code Review Expectations
-
-- Verify config changes don't break the YAML schema
-- Check path handling uses `pathlib.Path` consistently
-- Ensure UTF-8 encoding is specified for all file I/O
-- Review error handling for proper exception capture and stderr logging
-- Validate that new features respect existing conventions (dates ISO 8601, currency EUR, Spanish output)
-
-### Local Development Setup
+Install the engine dependencies:
 
 ```bash
-# Clone and navigate
-git clone <repo-url>
-cd pipeline
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r engine/requirements.txt
-
-# Run pipeline locally
-cd engine
-python run_pipeline.py
-
-# When ready to commit
-git add .
-git commit -m "feat(scope): description"
-git push origin feature/branch-name
+python -m pip install -r engine/requirements.txt
 ```
 
-### Issue Tracking
-
-- Open issues for bugs, feature requests, and documentation gaps
-- Use issue labels: `bug`, `feature`, `enhancement`, `documentation`, `question`
-- Link related PRs to issues in commit messages or PR description
-
-## Build, Test & Run Commands
-
-### Running the Pipeline
+Run the entry point from `engine/`, so the `src` imports resolve:
 
 ```bash
 cd engine
 python run_pipeline.py
 ```
 
-This will:
-1. Load configuration from `config/proyecto.yaml`
-2. Scan all folders listed in `rutas_entrada`
-3. Output results to console and log to `outputs/` directory
+The entry point generates the enriched CSV inventory, Markdown reports, the legacy Markdown memory, and `outputs/memoria_de_actividades.docx`. The DOCX output uses the configured normalized template and leaves phase amounts marked as pending until they can be reconciled with the financial memory.
 
-### Dependencies
-
-Install from `engine/requirements.txt`:
-```bash
-pip install -r engine/requirements.txt
-```
-
-Currently requires: `PyYAML>=6.0,<7.0`
-
-### Testing
-
-The `engine/tests/` directory exists but is currently empty. When adding tests, follow this pattern:
+There is no configured test suite, linter, or formatter, and `engine/tests/` is absent. Use the following focused validation when changing Python or YAML:
 
 ```bash
-# Run single test file
-python -m pytest engine/tests/test_inventario.py -v
+python -m compileall -q engine
+python - <<'PY'
+from pathlib import Path
+import yaml
 
-# Run all tests
-python -m pytest engine/tests/ -v
+for path in Path("engine/config").glob("*.yaml"):
+    with path.open(encoding="utf-8") as source:
+        yaml.safe_load(source)
+    print(f"valid: {path}")
+PY
 ```
 
-### Code Structure Inspection
+## Repository-specific conventions
 
-```bash
-# Find all Python modules
-find engine -name "*.py" | grep -v __pycache__
-
-# Check config file structure
-cat engine/config/proyecto.yaml
-```
-
-## Important Quirks & Gotchas
-
-- **Config Path Mismatch**: `run_pipeline.py` builds the config path relative to itself: `raiz_repositorio / "pipeline" / "config"`, but the actual script is in `engine/`. This suggests the script expects to be one level up or symlinked.
-- **Duplicate Logic**: The `buscar_documentos()` call appears twice in `main()` (lines 50 and 56) with different arguments—this is likely unintentional and should be deduplicated.
-- **Missing Extension Filtering**: `buscar_documentos()` returns all files; extension-based filtering happens elsewhere (not yet visible in current code).
-- **No Output Generation Yet**: The pipeline prints document lists to console but doesn't actually write the `inventario_documental.csv` or `informe_inventario.md` files defined in config yet.
-
-## Notes for Future Development
-
-- Consider adding parallelization for large folder scans using `concurrent.futures`
-- File hashing (SHA256) and duplicate detection are configured but not yet implemented
-- Text extraction for PDFs/Word/Excel is configured but not yet coded
-- Consider integrating with a logging module (e.g., Python `logging`) instead of print-based errors
+- Use `pathlib.Path` for file-system operations. Keep input and output locations configured in `proyecto.yaml`; do not hard-code project-document paths.
+- Read and write text as UTF-8. Console messages, generated reports, error messages, and rule vocabulary are Spanish; retain that language for user-facing additions.
+- Preserve the record shape used between phases. Metadata fields that must survive CSV serialization are consumed by later phases as pipe-delimited strings (for example, `nifs_detectados`, `fechas_detectadas`, `importes_detectados`, and `urls_detectadas`).
+- Classification and validation are heuristic. Keep confidence/severity values and the evidence used for a relation explicit; do not turn uncertain matches into definitive assertions in generated reports.
+- The configured `rutas_entrada` keys represent logical grant areas and are part of the document-context model. A missing physical input directory is intentionally skipped during discovery.
