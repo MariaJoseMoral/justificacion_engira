@@ -15,6 +15,7 @@ ENGINE_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ENGINE_ROOT))
 
 from src.evidencias import vincular_evidencias
+from src.economica import normalizar_gasto_label
 from src.memoria_actividades import GeneradorMemoriaActividades
 from src.plan import CanonicalPlan, parse_plan_documents
 from src.relacion_gastos import (
@@ -111,6 +112,12 @@ class PlanLedPipelineTests(unittest.TestCase):
 
 
 class InvoiceExtractionTests(unittest.TestCase):
+    def test_normalizes_gasto_variants_to_shared_label(self) -> None:
+        self.assertEqual("externos", normalizar_gasto_label("proveedores externos"))
+        self.assertEqual("externos", normalizar_gasto_label("Externo"))
+        self.assertEqual("autónoma", normalizar_gasto_label("Trabajos realizados por el autónomo"))
+        self.assertEqual("nómina", normalizar_gasto_label("Nóminas y personal"))
+
     def test_extracts_labelled_parties_dates_and_table_amounts(self) -> None:
         extraction = extraer_factura_desde_paginas((
             InvoicePage(

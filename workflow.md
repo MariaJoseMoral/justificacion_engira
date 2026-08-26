@@ -6,6 +6,15 @@ Construir un pipeline reutilizable capaz de transformar una carpeta de documenta
 
 El flujo se divide en fases independientes, donde la salida de cada una constituye la entrada de la siguiente.
 
+## Estado actual del proyecto
+
+La rama de trabajo ya incluye la corrección de la generación de la memoria económica. El generador de Excel ajusta la lógica de clasificación, la estructura de filas y la fórmula de sumatorios y desvíos para que respete la plantilla oficial del Ministerio en los dos bloques principales:
+
+- gastos con carga a la ayuda,
+- otros gastos del proyecto.
+
+La numeración se reinicia por clasificación, las filas se insertan dinámicamente y las celdas combinadas de la plantilla se restauran para mantener el formato oficial.
+
 ---
 
 # Arquitectura general

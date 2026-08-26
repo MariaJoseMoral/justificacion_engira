@@ -218,6 +218,7 @@ def main() -> int:
             ruta_plantilla(config, "economica", ruta_base), ruta_economica
         )
         print(f"✓ Memoria económica: {ruta_economica}")
+        print("✓ EDA relación de gastos: hoja EDA_RELACION_GASTOS incluida en el Excel generado")
         
         generar_informe_markdown(documentos, ruta_salida_informe, config, ruta_base)
         print(f"✓ Informe Markdown: {ruta_salida_informe}")
