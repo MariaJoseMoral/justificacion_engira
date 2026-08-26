@@ -71,7 +71,7 @@ plantillas:
     archivo: "memoria-de-actividades.docx"
   economica:
     carpeta: modelos_normalizados
-    archivo: "memoria-econ-mica--aut-nomos-.xlsx"
+    archivo: "memoria-economica-autonomos-.xlsx"
 
 evidencias:
   areas:
