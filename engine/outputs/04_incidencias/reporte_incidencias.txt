@@ -1,0 +1,1501 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    REPORTE DE INCIDENCIAS Y VALIDACIÓN                    ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+RESUMEN
+────────────────────────────────────────────────────────────────────────────────
+Total de incidencias: 296
+  • Críticas: 0
+  • Altas: 12
+  • Medias: 241
+  • Bajas: 43
+
+
+ALTA
+────────────────────────────────────────────────────────────────────────────────
+
+• gasto_sin_justificacion
+  Documento: MARIA JOSE MORAL.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+• gasto_sin_justificacion
+  Documento: Condiciones particulares - Servidores.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+• gasto_sin_justificacion
+  Documento: factura monitor.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+• gasto_sin_justificacion
+  Documento: factura pie de tv.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+• gasto_sin_justificacion
+  Documento: Factura STAND ENGIRA!.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+• gasto_sin_justificacion
+  Documento: Factura pccomponentes TV.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+• gasto_sin_justificacion
+  Documento: Factura_Mercartes_2025_C752426 (1).pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+• gasto_sin_justificacion
+  Documento: Factura_Mercartes_2025_C752426 (2).pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+• gasto_sin_justificacion
+  Documento: Factura_Mercartes_2025_C752426 (5).pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+• gasto_sin_justificacion
+  Documento: invoice.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+• gasto_sin_justificacion
+  Documento: BDC-6790184301-invoice-2847.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+• gasto_sin_justificacion
+  Documento: A-V2025-5238950.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+MEDIA
+────────────────────────────────────────────────────────────────────────────────
+
+• pago_sin_factura
+  Documento: PLANTILLA E-MAIL FUNCIONAMIENTO PROGRAMA.docx
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: enGira! - Artículo 01 Datos y Gestión Cultural.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: porfinlunes_dossier.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: Justificante_operacion_291220250084483.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: Justificante pago Darlene.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: justificante_stand_mercartes.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: Justificante_operacion_201220250038589.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: Justificante_operacion_201220250038229.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: Justificante_nómina_carles_septiembre.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: alvaro_caboalles.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: gestoria 2sem26.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: Justificante_operacion_211120250104897.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: Justificante_operacion_031120250065659.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: Justificante_operacion_151220250002633.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: MKT 50%.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: Justificante_operacion_270220260145618.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: QUOTANDA.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: Justificante_operacion_161220250060976.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• fecha_fuera_periodo
+  Documento: justificante_stand_mercartes.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_operacion_291220250085625.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_operacion_291220250084483.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_operacion_270220260145618.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: justificante_stand_mercartes.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_operacion_291220250085625.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Papel de trabajo.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura STAND ENGIRA!.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Esquema_modalidad_a1_regimen_especial.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV328281907.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: VJTLVPX73H4Y7930.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: MARIA JOSE MORAL.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: MARIA JOSE MORAL.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV328281907.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Innovación_-_Autónomos_-_Curriculum_y_Proyecto.docx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Invoice_2025_0054_Big_Bang_TA25.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante pago Darlene.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: porfinlunes_dossier.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: FACTURA_MMPVAGI0016002_25-07-2025.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: FACTURA_MMPVAHI0004037_25-08-2025.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura_MMPVAII001XXXX.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: mpE_C6GGUgR7ow3P7hDAqKrZCdxvjCajFoM+YNnH2Fw=.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: CONTRATO PRL MARIA JOSE MORAL_signed.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: 20251104152200_210.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV337023537.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV341096775.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV345039957_A23333533_03092026.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: 20251104152200_210.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: 20251104152200_210.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV337023537.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV341096775.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV345039957_A23333533_03092026.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura_FMPVAAJ001XXXX.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_operacion_211120250104897.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura pccomponentes TV.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: FACTURA 25032622R.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: DIART - programa de acompañamiento - 1a sesion.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: FACTURA 25005841RSPD.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: MKT 50%.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Autorizacion_modificaciones_sustanciales.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: 2501003 maría j moral morgado.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante pago Darlene.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: DiArt_sesion2_programa de acompañamiento .pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura_Mercartes_2025_C752426 (2).pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_operacion_201220250038589.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura_Mercartes_2025_C752426 (1).pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: 2501006 maría j moral morgado.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: VJ5GPLTFTKM50244.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_operacion_291220250084483.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: F260009 -Zeena - Dossier EnGira.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: bases_ayudas_a_gira.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Adobe Scan 20 oct 2025 (1).pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: VJ5GPLTFTKM50244.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Campaña_posicionamiento_LasTeatrísimas.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: parking mercartes.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: VJLVK4WVZN6U2846.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: VJTLVPX73H4Y7930.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_operacion_270220260145618.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: parking mercartes.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Invoice_2025_0054_Big_Bang_TA25.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: VJXCFZZJ3WNC7931.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: LaPeraDelOlmo_sesion3_programa_acompañamiento.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Invoice_2025_0054_Big_Bang_TA25.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: porfinlunes_dossier.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_nómina_carles_septiembre.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: E127 - ENGIRA!_signed.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: FACTURA 25032622R.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura_FMPVACJ007XXXX.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: FACTURA_FMPVAGI0013315_25-07-2025.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: FACTURA_FMPVAHI0010009_25-08-2025.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura_FMPVAII004XXXX.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura_FMPVAJI006XXXX.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura_FMPVAKI003XXXX.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura_FMPVALI001XXXX.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura_FMPVAAJ001XXXX.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura_FMPVABJ005XXXX.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: cos maria moral0925.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: VJLVK4WVZN6U2846.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: resoluci-n--de-concesi-n.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: cos maria moral09-1025.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Acompañamiento semestral.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: alvaro_caboalles.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_paloma calle.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: alvaro_caboalles.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_operacion_211120250104897.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: MKT 50%.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_operacion_201220250038589.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_nómina_carles_septiembre.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Justificante_paloma calle.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/Servicios enGira!.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/dossier_patrocinio.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/Acompañamiento semestral.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/Las Teatrísimas/Campaña_posicionamiento_LasTeatrísimas.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/Las Teatrísimas/Informe_sesion1_LasTeatrisimas.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/Las Teatrísimas/DIART - programa de acompañamiento - 1a sesion.docx
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/Las Teatrísimas/210_dossier_2056391700.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/entregables/plantilla_email_distribucion.docx
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/entregables/modelo_mail_comision_RED_CAM.docx
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/DiArt/escenarios_de_venta.docx
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/DiArt/DiArt_sesion2_programa de acompañamiento .pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/DiArt/comisionprograma.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/DiArt/DIART - programa de acompañamiento - 1a sesion.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/Info/Acompañamiento semestral.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/Info/Espacios colaboradores.xlsx
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/Info/Borrador e-mail.docx
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/Info/PLANTILLA E-MAIL FUNCIONAMIENTO PROGRAMA.docx
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/Info/PLANTILLA E-MAIL FUNCIONAMIENTO PROGRAMA.pages
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/LaPeraDelOlmo/LaPeraDelOlmo_sesion3_programa_acompañamiento.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/LaPeraDelOlmo/LaPeraDelOlmo_sesion1_programa_acompañamiento.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/Info/IMPRESIONES Y PAISAJES/BIBILIOGRAFÍA.docx
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/entregables/subvencion_a_gira_2026/Resumen_bases.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/PROGRAMAS DE ACOMPAÑAMIENTO/entregables/subvencion_a_gira_2026/bases_ayudas_a_gira.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 02_ACTIVIDADES_REALIZADAS/WEBINARS/26-11/Presentación enGira!.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 04_COMUNICACION_Y_DIFUSION/creacion_contenido/investigacion/enGira! - Artículo 01 Datos y Gestión Cultural.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 05_PARTICIPANTES_Y_COLABORADORES/contrato zeena_signed_signed.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 05_PARTICIPANTES_Y_COLABORADORES/20251104152200_210.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 05_PARTICIPANTES_Y_COLABORADORES/contrato_carles_firmado.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 05_PARTICIPANTES_Y_COLABORADORES/CONTRATO_PRESTADOR_SERVICIOS_FIRMADO_MARIA JOSE MORAL.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 05_PARTICIPANTES_Y_COLABORADORES/redespidotrabajador/recibo finiq. maria jose 311025.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 05_PARTICIPANTES_Y_COLABORADORES/redespidotrabajador/finiq. maria jose 311025.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 05_PARTICIPANTES_Y_COLABORADORES/rebajanuevaempleadaautnoma/recibo finiq. darlene 241125.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 05_PARTICIPANTES_Y_COLABORADORES/rebajanuevaempleadaautnoma/finiq. darlene 241125.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 05_PARTICIPANTES_Y_COLABORADORES/NÓMINAS/Copia de NOM_CARLES_HARILLO_signed.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 06_DESARROLLO_PLATAFORMA/SEO/3.2736.-Maria-Artes-Escenicas-DISP-SIN-IVA_2025_11_01.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 06_DESARROLLO_PLATAFORMA/SEO/3.2736.-Maria-Artes-Escenicas-DISP-SIN-IVA_2026_02_01.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 06_DESARROLLO_PLATAFORMA/SEO/mpE_C6GGUgR7ow3P7hDAqKrZCdxvjCajFoM+YNnH2Fw=.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 06_DESARROLLO_PLATAFORMA/SEO/Implementación - Engina art.docx
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 06_DESARROLLO_PLATAFORMA/SEO/reportes/3.2736.-Maria-Artes-Escenicas-DISP-SIN-IVA_2025_03_03.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 06_DESARROLLO_PLATAFORMA/SEO/reportes/3.2736.-Maria-Artes-Escenicas-DISP-SIN-IVA_2025_07_03.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 06_DESARROLLO_PLATAFORMA/SEO/reportes/3.2736.-Maria-Artes-Escenicas-DISP-SIN-IVA_2025_10_07.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 06_DESARROLLO_PLATAFORMA/SEO/reportes/3.2736.-Maria-Artes-Escenicas-DISP-SIN-IVA_2025_02_03.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 06_DESARROLLO_PLATAFORMA/SEO/reportes/3.2736.-Maria-Artes-Escenicas-DISP-SIN-IVA_2025_09_09.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 06_DESARROLLO_PLATAFORMA/SEO/reportes/3.2736.-Maria-Artes-Escenicas-DISP-SIN-IVA_2025_06_03.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 06_DESARROLLO_PLATAFORMA/SEO/reportes/3.2736.-Maria-Artes-Escenicas-DISP-SIN-IVA_2025_04_03.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 08_JUSTIFICACION_ECONOMICA/INSTRUCCIONES_JUSTIFICACION/manual-para-la-justificaci-n.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 08_JUSTIFICACION_ECONOMICA/INSTRUCCIONES_JUSTIFICACION/instrucciones-para-la-justificaci-n-innovaci-n-2025.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 08_JUSTIFICACION_ECONOMICA/JUSTIFICANTES DE PAGO/72121899-f19f-4963-bce2-a525b5ac25be.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 08_JUSTIFICACION_ECONOMICA/JUSTIFICANTES DE PAGO/Justificante_operacion_291220250085625.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• vinculo_evidencia_pendiente
+  Documento: 08_JUSTIFICACION_ECONOMICA/JUSTIFICANTES DE PAGO/Justificante_operacion_161220250060976.pdf
+  Descripción: N/A
+  Recomendación: Confirmar o corregir la actuación asociada.
+
+• accion_sin_evidencia_vinculada
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Aportar evidencia o documentar la no ejecución.
+
+• accion_sin_evidencia_vinculada
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Aportar evidencia o documentar la no ejecución.
+
+• accion_sin_evidencia_vinculada
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Aportar evidencia o documentar la no ejecución.
+
+• accion_sin_evidencia_vinculada
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Aportar evidencia o documentar la no ejecución.
+
+• accion_sin_evidencia_vinculada
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Aportar evidencia o documentar la no ejecución.
+
+• accion_sin_evidencia_vinculada
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Aportar evidencia o documentar la no ejecución.
+
+• accion_sin_evidencia_vinculada
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Aportar evidencia o documentar la no ejecución.
+
+• accion_sin_evidencia_vinculada
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Aportar evidencia o documentar la no ejecución.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+BAJA
+────────────────────────────────────────────────────────────────────────────────
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• documento_duplicado
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Verificar y eliminar si es necesario
+
+• importe_anomalo
+  Documento: gestoria 2sem26.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: alvaro_caboalles.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: QUOTANDA.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: Justificante_paloma calle.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: Justificante_operacion_151220250002633.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: Justificante_operacion_161220250060976.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: Justificante_operacion_201220250038229.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: Justificante_operacion_201220250038589.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: Justificante_operacion_211120250104897.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: MKT 50%.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: Justificante pago Darlene.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: porfinlunes_dossier.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: Justificante_operacion_270220260145618.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: justificante_stand_mercartes.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: Justificante_nómina_carles_septiembre.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: Justificante_operacion_291220250084483.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad
+
+• importe_anomalo
+  Documento: Justificante_operacion_291220250085625.pdf
+  Descripción: N/A
+  Recomendación: Verificar la cantidad

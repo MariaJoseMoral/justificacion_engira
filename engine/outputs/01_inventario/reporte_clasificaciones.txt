@@ -1,0 +1,107 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                      REPORTE DE CLASIFICACIONES                            ║
+║                        Proyecto enGira! (2025-2026)                        ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+RESUMEN EJECUTIVO
+─────────────────────────────────────────────────────────────────────────────
+✓ Total de documentos procesados: 279
+✓ Documentos clasificados: 100%
+✓ Promedio de confianza: 0.65
+
+TIPOS DOCUMENTALES IDENTIFICADOS
+─────────────────────────────────────────────────────────────────────────────
+1. Documento Genérico      63 documentos  (22.6%)
+2. Factura                 59 documentos  (21.1%) ← Relevante económico
+3. Transferencia           37 documentos  (13.3%) ← Pagos
+4. Fotografía              34 documentos  (12.2%) ← Evidencias
+5. Presupuesto             33 documentos  (11.8%) ← Análisis
+6. Memoria                 20 documentos  (7.2%)  ← Narrativa
+7. Nómina                  8 documentos   (2.9%)  ← Laboral
+8. Contrato                7 documentos   (2.5%)  ← Legal
+9. Gasto de Viaje          7 documentos   (2.5%)  ← Economía
+10. Resolución             3 documentos   (1.1%)  ← Legal
+11. Certificado            3 documentos   (1.1%)  ← Evidencia
+12. Video                  3 documentos   (1.1%)  ← Audiovisual
+13. Recibo                 2 documentos   (0.7%)  ← Economía
+
+CLASIFICACIÓN FUNCIONAL
+─────────────────────────────────────────────────────────────────────────────
+Categoría           Documentos    % del total    Descripción
+─────────────────────────────────────────────────────────────────────────────
+economica           171           61.3%          Gastos, justificación
+gasto               138           49.5%          Desembolsos realizados
+justificacion       132           47.3%          Documentación obligatoria
+evidencia           104           37.3%          Pruebas de actividades
+actividad           95            34.1%          Ejecución del proyecto
+documentacion       84            30.1%          Registros generales
+administracion      49            17.6%          Gestión interna
+comunicacion        42            15.1%          Difusión y redes
+pago                37            13.3%          Transferencias
+laboral             30            10.8%          Nóminas y contratos
+
+ACTIVIDADES DETECTADAS
+─────────────────────────────────────────────────────────────────────────────
+Actividad           Documentos    Descripción
+─────────────────────────────────────────────────────────────────────────────
+comunicacion        32            Campañas en redes sociales, contenido
+desarrollo          18            Plataforma, software
+engira              16            Proyecto principal
+mercartes           16            Actividad cultural colaborativa
+formacion           1             Capacitación y workshops
+
+ANÁLISIS ECONÓMICO
+─────────────────────────────────────────────────────────────────────────────
+Gastos Documentados:     138 facturas/gastos
+Pagos Registrados:       37 transferencias
+Ratio Gasto/Pago:        3.73 (facturas por transferencia)
+
+Interpretación: Hay documentación dispersa de gastos que se pagan 
+posteriormente mediante transferencias. Esto es normal en fondos públicos
+donde se documenta el gasto y después se liquida.
+
+EVIDENCIAS Y ACTIVIDADES
+─────────────────────────────────────────────────────────────────────────────
+Documentos de Evidencia:  104 (37.3% del total)
+  - Fotografías: 34
+  - Videos: 3
+  - Certificados: 3
+  - Otros: 64
+
+Documentos de Actividad:  95 (34.1% del total)
+  - Memorias de actividad
+  - Informes de ejecución
+  - Cronogramas y planes
+
+DOCUMENTACIÓN ADMINISTRATIVA
+─────────────────────────────────────────────────────────────────────────────
+Documentación Obligatoria: 132 documentos (47.3%)
+Administración:            49 documentos (17.6%)
+Total Administrativo:      181 documentos (64.9%)
+
+Esto asegura que el proyecto cuenta con la documentación requerida
+por el Ministerio de Cultura para la justificación de fondos públicos.
+
+CONFIANZA EN CLASIFICACIONES
+─────────────────────────────────────────────────────────────────────────────
+Las clasificaciones se basan en:
+  • Análisis de nombres de archivo
+  • Extracción de contenido (PDF, Word, Excel)
+  • Detección de patrones (NIF, importe, fecha)
+  • Ubicación en estructura de carpetas
+  • Idioma del documento
+
+Niveles de confianza:
+  - Alta (>0.8):  Factura, Transferencia, Foto/Video
+  - Media (0.5-0.8): Presupuesto, Contrato, Nómina
+  - Baja (<0.5):  Genérico, Otros
+
+PRÓXIMAS FASES
+─────────────────────────────────────────────────────────────────────────────
+☐ Fase 5: Extracción de entidades (empresas, personas, fechas)
+☐ Fase 6: Cruce documental (relacionar factura↔pago)
+☐ Fase 7: Detección de incidencias (gastos sin justificar)
+☐ Fase 8: Generación de memoria justificativa automática
+
+Generado: 2026-07-27 15:05 UTC
+Tiempo de procesamiento: ~2 minutos (279 documentos)

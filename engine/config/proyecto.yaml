@@ -22,6 +22,10 @@ fechas:
 repositorio:
   raiz: "../.."
 
+
+datos:
+  raiz: "../../datos_engira"
+
 rutas_entrada:
   bases_y_resolucion: "00_BASES_Y_RESOLUCION"
   proyecto_presentado: "01_PROYECTO_PRESENTADO"
@@ -34,12 +38,58 @@ rutas_entrada:
   justificacion_economica: "08_JUSTIFICACION_ECONOMICA"
   desviaciones: "09_DESVIACIONES_Y_CAMBIOS"
   memoria_final: "10_MEMORIA_FINAL"
+  modelos_normalizados: "11_MODELOS_NORMALIZADOS"
 
 rutas_salida:
-  outputs: "pipeline/outputs"
-  logs: "pipeline/logs"
-  inventario: "pipeline/outputs/inventario_documental.csv"
-  informe: "pipeline/outputs/informe_inventario.md"
+  outputs: "outputs"
+  logs: "logs"
+  inventario: "outputs/01_inventario/inventario_documental.csv"
+  informe: "outputs/01_inventario/informe_inventario.md"
+  plan_canonico: "outputs/02_plan_y_evidencias/plan_canonico.json"
+  vinculos_evidencias: "outputs/02_plan_y_evidencias/vinculos_evidencias.csv"
+  memoria_actividades: "outputs/05_modelos_normalizados/memoria_de_actividades.docx"
+  memoria_economica: "outputs/05_modelos_normalizados/memoria_economica.xlsx"
+  incidencias: "outputs/04_incidencias/reporte_incidencias.txt"
+  tabla_incidencias_xlsx: "outputs/04_incidencias/tabla_incidencias.xlsx"
+  tabla_incidencias_csv: "outputs/04_incidencias/tabla_incidencias.csv"
+  relacion_gastos: "outputs/03_economica/relacion_facturas_gastos.csv"
+  extraccion_facturas_campos: "outputs/03_economica/extraccion_facturas_campos.csv"
+  revision_extraccion_facturas: "outputs/03_economica/revision_extraccion_facturas.csv"
+
+extraccion_facturas:
+  # Los valores con menor confianza se conservan, pero se marcan para revisión.
+  confianza_revision_automatica: 0.90
+
+plan_aprobado:
+  patrones_cronograma:
+    - "*Cronograma*.docx"
+    - "*cronograma*.docx"
+
+plantillas:
+  actividades:
+    carpeta: modelos_normalizados
+    archivo: "memoria-de-actividades.docx"
+  economica:
+    carpeta: modelos_normalizados
+    archivo: "memoria-economica-autonomos-.xlsx"
+
+evidencias:
+  areas:
+    - actividades
+    - resultados_indicadores
+    - comunicacion
+    - participantes
+    - desarrollo_plataforma
+    - evidencias
+    - justificacion_economica
+    - desviaciones
+
+clasificacion:
+  actividades:
+    comunicacion: "instagram|redes|comunicaci[oó]n|social media"
+    desarrollo: "desarrollo|platform|web|app|software"
+    formacion: "formaci[oó]n|training|workshop"
+    alianzas: "alianza|partner|colaboraci[oó]n"
 
 opciones:
   incluir_archivos_ocultos: false
