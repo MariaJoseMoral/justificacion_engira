@@ -4,10 +4,10 @@
 
 RESUMEN
 ────────────────────────────────────────────────────────────────────────────────
-Total de incidencias: 296
+Total de incidencias: 373
   • Críticas: 0
-  • Altas: 12
-  • Medias: 241
+  • Altas: 13
+  • Medias: 317
   • Bajas: 43
 
 
@@ -21,6 +21,11 @@ ALTA
 
 • gasto_sin_justificacion
   Documento: Condiciones particulares - Servidores.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar justificante de pago
+
+• gasto_sin_justificacion
+  Documento: relacion_gastos.xlsx
   Descripción: N/A
   Recomendación: Adjuntar justificante de pago
 
@@ -84,6 +89,11 @@ MEDIA
 
 • pago_sin_factura
   Documento: enGira! - Artículo 01 Datos y Gestión Cultural.pdf
+  Descripción: N/A
+  Recomendación: Adjuntar factura o justificante del gasto
+
+• pago_sin_factura
+  Documento: Justificante F2026_04_zeena.pdf
   Descripción: N/A
   Recomendación: Adjuntar factura o justificante del gasto
 
@@ -198,12 +208,42 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
   Documento: Papel de trabajo.pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
   Documento: Factura STAND ENGIRA!.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -219,6 +259,11 @@ MEDIA
 
 • fecha_fuera_periodo
   Documento: VJTLVPX73H4Y7930.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -258,6 +303,11 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
   Documento: FACTURA_MMPVAGI0016002_25-07-2025.pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
@@ -269,6 +319,21 @@ MEDIA
 
 • fecha_fuera_periodo
   Documento: Factura_MMPVAII001XXXX.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -293,12 +358,27 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
-  Documento: INV341096775.pdf
+  Documento: Moviments_1_9_2026.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
   Documento: INV345039957_A23333533_03092026.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV349200211_A23333533_04092026.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV353435789-2.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV357460022-2.pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -323,7 +403,22 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
-  Documento: INV345039957_A23333533_03092026.pdf
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV349200211_A23333533_04092026.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV353435789-2.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: INV357460022-2.pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -333,7 +428,22 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
   Documento: Justificante_operacion_211120250104897.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -348,6 +458,21 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: 07_26_ACaboalles_ArticulonGira.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
   Documento: DIART - programa de acompañamiento - 1a sesion.pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
@@ -358,12 +483,17 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
-  Documento: MKT 50%.pdf
+  Documento: Justificante F2026_04_zeena.pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
   Documento: Autorizacion_modificaciones_sustanciales.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -383,12 +513,27 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
   Documento: Factura_Mercartes_2025_C752426 (2).pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
   Documento: Justificante_operacion_201220250038589.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -423,12 +568,22 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
   Documento: Adobe Scan 20 oct 2025 (1).pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
-  Documento: VJ5GPLTFTKM50244.pdf
+  Documento: relacion_gastos.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: relacion_gastos.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -438,12 +593,12 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
-  Documento: parking mercartes.pdf
+  Documento: relacion_gastos.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
-  Documento: VJLVK4WVZN6U2846.pdf
+  Documento: relacion_gastos.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -454,6 +609,11 @@ MEDIA
 
 • fecha_fuera_periodo
   Documento: Justificante_operacion_270220260145618.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -478,6 +638,11 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
   Documento: Invoice_2025_0054_Big_Bang_TA25.pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
@@ -488,7 +653,27 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
   Documento: Justificante_nómina_carles_septiembre.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -504,6 +689,16 @@ MEDIA
 
 • fecha_fuera_periodo
   Documento: Factura_FMPVACJ007XXXX.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: FACTURA_FMPVADJ0062265_25-04-2026.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Factura_FMPVAEJ003XXXX.pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -548,6 +743,16 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: relacion_gastos.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
   Documento: cos maria moral0925.pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
@@ -558,12 +763,27 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
   Documento: resoluci-n--de-concesi-n.pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
   Documento: cos maria moral09-1025.pdf
+  Descripción: N/A
+  Recomendación: Verificar que la fecha es correcta
+
+• fecha_fuera_periodo
+  Documento: Moviments_1_9_2026.xlsx
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -593,7 +813,7 @@ MEDIA
   Recomendación: Verificar que la fecha es correcta
 
 • fecha_fuera_periodo
-  Documento: MKT 50%.pdf
+  Documento: Justificante F2026_04_zeena.pdf
   Descripción: N/A
   Recomendación: Verificar que la fecha es correcta
 
@@ -847,20 +1067,10 @@ MEDIA
   Descripción: N/A
   Recomendación: Confirmar o corregir la actuación asociada.
 
-• vinculo_evidencia_pendiente
-  Documento: 08_JUSTIFICACION_ECONOMICA/JUSTIFICANTES DE PAGO/72121899-f19f-4963-bce2-a525b5ac25be.pdf
+• accion_sin_evidencia_vinculada
+  Documento: N/A
   Descripción: N/A
-  Recomendación: Confirmar o corregir la actuación asociada.
-
-• vinculo_evidencia_pendiente
-  Documento: 08_JUSTIFICACION_ECONOMICA/JUSTIFICANTES DE PAGO/Justificante_operacion_291220250085625.pdf
-  Descripción: N/A
-  Recomendación: Confirmar o corregir la actuación asociada.
-
-• vinculo_evidencia_pendiente
-  Documento: 08_JUSTIFICACION_ECONOMICA/JUSTIFICANTES DE PAGO/Justificante_operacion_161220250060976.pdf
-  Descripción: N/A
-  Recomendación: Confirmar o corregir la actuación asociada.
+  Recomendación: Aportar evidencia o documentar la no ejecución.
 
 • accion_sin_evidencia_vinculada
   Documento: N/A
@@ -901,6 +1111,181 @@ MEDIA
   Documento: N/A
   Descripción: N/A
   Recomendación: Aportar evidencia o documentar la no ejecución.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
+
+• gasto_no_cargado_automaticamente
+  Documento: N/A
+  Descripción: N/A
+  Recomendación: Revisar importe, factura y vínculo con la acción aprobada.
 
 • gasto_no_cargado_automaticamente
   Documento: N/A

@@ -127,10 +127,22 @@ def generar_relacion_gastos(
     revisiones: list[dict[str, str]] = []
 
     for documento in inventario:
-        if (
-            "/CONTABILIDAD/GASTOS/" not in str(documento.get("ruta_relativa", ""))
-            or documento.get("tipo_documental") not in _TIPOS_GASTO
-        ):
+        ruta_relativa = str(documento.get("ruta_relativa", "")).replace("\\", "/")
+
+        # Todo documento situado físicamente en CONTABILIDAD/GASTOS
+        # se considera candidato a gasto, aunque el clasificador haya
+        # asignado incorrectamente su tipo documental.
+        if "/CONTABILIDAD/GASTOS/" not in ruta_relativa:
+            continue
+
+        es_gasto = documento.get("es_gasto")
+
+        if isinstance(es_gasto, str):
+            es_gasto = es_gasto.strip().lower() in {
+                "true", "1", "yes", "si", "sí"
+            }
+
+        if not es_gasto:
             continue
 
         gasto_id = _id_gasto(str(documento["ruta_relativa"]))

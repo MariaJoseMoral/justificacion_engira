@@ -48,33 +48,88 @@ class RelationExpense:
 
 
 def extraer_gastos_validados(
-    inventory: Iterable[dict[str, Any]], plan: CanonicalPlan, links: Iterable[EvidenceLink]
+    inventory: Iterable[dict[str, Any]],
+    plan: CanonicalPlan,
+    links: Iterable[EvidenceLink],
 ) -> tuple[list[FinancialRecord], list[str]]:
-    """Extract only unambiguous expenses with an automatic approved-action link."""
+    """
+    Extrae los documentos económicos situados físicamente en
+    CONTABILIDAD/GASTOS.
+
+    La pertenencia a la carpeta GASTOS y el indicador es_gasto tienen
+    prioridad sobre la clasificación automática del tipo documental.
+    Esto evita perder facturas mal clasificadas como presupuesto,
+    nómina, documento, etc.
+    """
     actions = {action.id: action for action in plan.actions}
     link_by_path = {link.document_path: link for link in links}
+
     records: list[FinancialRecord] = []
     warnings: list[str] = []
-    valid_types = {"factura", "factura_gasto_viaje", "nomina", "recibo"}
+
     for document in inventory:
-        if document.get("tipo_documental") not in valid_types:
+        path = str(
+            document.get("ruta_relativa")
+            or document.get("nombre")
+            or ""
+        )
+
+        # Solo documentos situados en la carpeta contable de gastos.
+        if "/CONTABILIDAD/GASTOS/" not in path.replace("\\", "/"):
             continue
-        path = str(document.get("ruta_relativa") or document.get("nombre") or "")
-        if "/CONTABILIDAD/GASTOS/" not in path:
+
+        # Debe estar identificado funcionalmente como gasto.
+        es_gasto = document.get("es_gasto")
+
+        if isinstance(es_gasto, str):
+            es_gasto = es_gasto.strip().lower() in {
+                "true", "1", "yes", "si", "sí"
+            }
+
+        if not es_gasto:
             continue
+
+        # Necesitamos vínculo con una acción aprobada.
         link = link_by_path.get(path)
+
         if not link or not link.action_id:
-            warnings.append(f"Gasto no cargado por falta de vínculo con acción aprobada: {path}")
+            warnings.append(
+                f"Gasto no cargado por falta de vínculo "
+                f"con acción aprobada: {path}"
+            )
             continue
+
+        if link.action_id not in actions:
+            warnings.append(
+                f"Gasto no cargado: acción aprobada inexistente "
+                f"{link.action_id}: {path}"
+            )
+            continue
+
+        # Extraer importes detectados.
         amounts = [
-            amount for amount in (
-                parse_amount(value) for value in _split_values(document.get("importes_detectados"))
-            ) if amount is not None and amount > 0
+            amount
+            for amount in (
+                parse_amount(value)
+                for value in _split_values(
+                    document.get("importes_detectados")
+                )
+            )
+            if amount is not None and amount > 0
         ]
+
         amount = _resolve_amount(path, amounts, warnings)
+
         if amount is None:
+            warnings.append(
+                f"Gasto detectado pero sin importe resoluble: {path}"
+            )
             continue
-        dates = _split_values(document.get("fechas_detectadas"))
+
+        dates = _split_values(
+            document.get("fechas_detectadas")
+        )
+
         records.append(
             FinancialRecord(
                 document_path=path,
@@ -82,10 +137,13 @@ def extraer_gastos_validados(
                 action_title=actions[link.action_id].title,
                 amount=amount,
                 issue_date=dates[0] if dates else "",
-                document_type=str(document.get("tipo_documental")),
+                document_type=str(
+                    document.get("tipo_documental") or "gasto"
+                ),
                 review_state=link.review_state,
             )
         )
+
     return records, warnings
 
 
@@ -235,6 +293,15 @@ class AdaptadorMemoriaEconomica:
         return replace(expense, emisor=emisor)
 
     def _load_relation_expenses(self) -> list[RelationExpense]:
+        """
+        Carga los gastos consolidados desde relacion_gastos.xlsx y añade
+        automáticamente los nuevos documentos económicos detectados por
+        el pipeline que todavía no estén incluidos en esa relación.
+        """
+
+    # ------------------------------------------------------------------
+    # 1. Cargar relación de gastos consolidada/manual
+    # ------------------------------------------------------------------
         frame = pd.read_excel(self._relation_xlsx_path(), sheet_name="Hoja 1")
         columns = {str(column): normalizar_texto(str(column)) for column in frame.columns}
 
@@ -255,46 +322,64 @@ class AdaptadorMemoriaEconomica:
         col_fecha_pago = pick("fecha", "pago")
 
         expenses: list[RelationExpense] = []
+
         for _, row in frame.iterrows():
             cargo = _clean_text(row.get(col_cargo))
             partida = _clean_text(row.get(col_partida))
             gasto_original = _clean_text(row.get(col_gastos))
             gasto_normalizado = normalizar_gasto_label(gasto_original)
+
             if not cargo or not partida or not gasto_original:
                 continue
+
             tipo = _normalize_expense_type(gasto_normalizado)
+
             numero_factura = _clean_text(row.get(col_numero))
             if _looks_like_date_token(numero_factura):
                 numero_factura = ""
+
             concepto = _clean_text(row.get(col_concepto))
             if not concepto:
                 concepto = partida
 
             fecha_factura_raw = row.get(col_fecha_factura)
             fecha_pago_raw = row.get(col_fecha_pago)
+
             emisor = _clean_text(row.get(col_emisor))
             fecha_factura = _format_relation_date(fecha_factura_raw)
             fecha_pago = _format_relation_date(fecha_pago_raw)
+
             mes_nomina = _month_year_placeholder(fecha_factura, fecha_pago)
-            # For nóminas, EMISOR often holds the payroll period date when FECHA_FACTURA
-            # is absent – extract mes_nomina from it if still empty.
+
             if not mes_nomina and emisor and _looks_like_date_token(emisor):
                 mes_nomina = _month_year_placeholder(emisor[:10], "")
-            nombre_perceptor = _clean_text(row.get("Nombre y apellidos del perceptor"))
+
+            nombre_perceptor = _clean_text(
+                row.get("Nombre y apellidos del perceptor")
+            )
 
             if tipo in {"NOMINA", "AUTONOMA"}:
                 if not fecha_pago and fecha_factura:
                     fecha_pago = fecha_factura
+
                 if not mes_nomina:
-                    mes_nomina = _month_year_placeholder(fecha_factura, fecha_pago)
+                    mes_nomina = _month_year_placeholder(
+                        fecha_factura,
+                        fecha_pago,
+                    )
+
                 if not nombre_perceptor:
                     nombre_perceptor = concepto
+
             amount = _parse_relation_amount(row.get(col_importe))
+
             if amount is None or amount <= 0:
                 if tipo in {"NOMINA", "AUTONOMA"}:
                     amount = _parse_relation_amount(fecha_factura_raw)
+
                 if amount is None or amount <= 0:
                     continue
+
             expense = RelationExpense(
                 numero_factura=numero_factura,
                 emisor=emisor,
@@ -310,7 +395,11 @@ class AdaptadorMemoriaEconomica:
                 mes_nomina=mes_nomina,
                 nombre_perceptor=nombre_perceptor,
             )
-            expenses.append(self._enrich_expense_from_accounting(expense))
+
+            expenses.append(
+                self._enrich_expense_from_accounting(expense)
+            )
+
         return expenses
 
     def _load_authorized_budget(self) -> dict[tuple[str, str], float]:
